@@ -73,8 +73,6 @@ export default {
 <style>
 .pagina {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 15%;
+  margin: auto;
 }
 </style>
