@@ -24,7 +24,7 @@ export default {
 
   },
   created: function() {
-    axios.get('http://localhost:3000/api/v1/ranking/1').then(res => {
+    axios.get('https://backend-athon-strike.herokuapp.com/api/v1/ranking/1').then(res => {
         this.ranking = res.data;
     });
   },
