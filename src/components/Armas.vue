@@ -30,8 +30,6 @@ export default {
 
 <style>
 #armas {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  margin: auto;
 }
 </style>

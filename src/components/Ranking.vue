@@ -34,8 +34,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #rank {
-  text-align: center;
+  margin: auto;
 }
 </style>
