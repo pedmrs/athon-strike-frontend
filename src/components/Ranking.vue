@@ -38,4 +38,10 @@ export default {
 #rank {
   margin: auto;
 }
+h1 {
+  color: #ffb300;
+  width: 100vw;
+  text-align: center;
+  margin: 0 auto 2%;
+}
 </style>

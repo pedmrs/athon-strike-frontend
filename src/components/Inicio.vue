@@ -1,7 +1,7 @@
 <template>
   <div class="column">
       <input type="text" class="input is-rounded" placeholder="Buscar jogador" v-model="busca">
-      <button class="button is-success" id="btn-busca" >Buscar</button>
+      <button class="button" id="btn-busca" >Buscar</button>
   </div>
 </template>
 
@@ -31,5 +31,13 @@ button {
     display: flex;
     margin: 1% auto 0;
     border-radius: 30px;
+    background-color: #ffb300;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: #face67;
+    color: white;
+    transition: color 200ms;
 }
 </style>

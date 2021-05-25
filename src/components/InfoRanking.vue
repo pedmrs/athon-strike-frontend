@@ -24,6 +24,12 @@ export default {
 
 <style scoped>
 .columns {
+    margin: auto;
+    max-width: 50vw;
     text-align: center;
+}
+p {
+  color: white;
+  text-align: center;
 }
 </style>

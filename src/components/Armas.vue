@@ -1,8 +1,10 @@
 <template>
   <div id="armas">
     <h1 class="is-size-1">Lista de Armas</h1>
-    <div v-for="(arma, index) in armas" :key="index">
-      <InfoArma :arma="arma"/>
+    <div class="card-arma">
+      <div v-for="(arma, index) in armas" :key="index">
+        <InfoArma :arma="arma"/>
+      </div>
     </div>
   </div>
 </template>
@@ -28,8 +30,20 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #armas {
-  margin: auto;
+  width: 100%;
+}
+h1 {
+  color: #ffb300;
+  width: 100vw;
+  text-align: center;
+}
+.card-arma {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80vw;
+  gap: 20px;
+  margin: 1% auto;
 }
 </style>

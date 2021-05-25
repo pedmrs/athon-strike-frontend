@@ -1,4 +1,5 @@
 <template>
+<div class="global">
     <Header id="header" @switchPage="switchPage"/>
     <div class="pagina">
       <Armas v-if="isArmas" />
@@ -7,6 +8,7 @@
       <Ranking v-else-if="isRankingEquipe" tipo="equipe" />
       <Inicio v-else />
     </div>
+</div>
 </template>
 
 <script>
@@ -71,6 +73,11 @@ export default {
 </script>
 
 <style>
+.global{
+  height: 100vh;
+  background-color: #3e484f;
+}
+
 .pagina {
   display: flex;
   margin: auto;

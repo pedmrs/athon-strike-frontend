@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav id="header" class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="http://localhost:8080">
+        <a class="navbar-item">
         <img src="../assets/logo-astrike.png" width="120" height="40">
         </a>
 
@@ -57,6 +57,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+#header, .navbar-dropdown {
+    background-color: #3e484f;
 
+}
+
+.navbar-item, .navbar-link {
+    color: white;
+}
 </style>

@@ -2,12 +2,12 @@
   <div class="card">
     <div class="card-content">
         <div class="media">
-        <div class="media-content">
-            <p class="title is-4">{{arma.nome}}</p>
-        </div>
+          <div class="media-content">
+              <p class="title is-4">{{arma.nome}}</p>
+          </div>
         </div>
 
-        <div class="content">
+        <div>
             <ol>
                 <p>Dano no corpo: {{arma.danoCorpo}}</p>
                 <p>Dano na cabeça: {{arma.danoCabeca}}</p>
@@ -25,10 +25,12 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .card {
-    max-width: 400px;
-    align-items: center;
-  justify-content: center;
+    max-width: 20vw;
+    margin: auto;
+}
+p {
+  text-align: center;
 }
 </style>
