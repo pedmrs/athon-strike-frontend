@@ -1,6 +1,6 @@
 <template>
-  <div class="cards" v-for="i in qtdPartidas" :key="i">
-    <InfoPartida :partida="partidas.slice(0 + (10 * i), 10 + (10 * i))" />
+  <div class="cards" v-for="partida in partidas" :key="partida.partida_id">
+    <InfoPartida :partida="partida" />
   </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
   },
   created: function() {
       axios.get('https://backend-athon-strike.herokuapp.com/api/v1/partidas').then(res => {
+        console.log(res.data)
         this.partidas = res.data
         this.qtdPartidas = this.partidas.map(info => info.partida_id).filter((value, index, self) => self.indexOf(value) === index);
       });
