@@ -11,7 +11,7 @@
 
 <script>
 import axios from 'axios'
-import InfoArma from './InfoArma'
+import InfoArma from '../components/InfoArma'
 
 export default {
   data() {

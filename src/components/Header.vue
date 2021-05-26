@@ -1,43 +1,37 @@
 <template>
   <nav id="header" class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item">
+        <router-link to="/" class="navbar-item">
         <img src="../assets/logo-astrike.png" width="120" height="40">
-        </a>
-
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        </a>
+        </router-link>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-        <a class="navbar-item" @click="switchPage('inicio')">
+        <router-link :to="{ name: 'Inicio' }" class="navbar-item" @click="switchPage('inicio')">
             Início
-        </a>
+        </router-link>
 
-        <a class="navbar-item" @click="switchPage('partidas')">
+        <router-link :to="{ name: 'Partidas' }" class="navbar-item" @click="switchPage('partidas')">
             Partidas
-        </a>
+        </router-link>
         
-        <a class="navbar-item" @click="switchPage('armas')">
+        <router-link :to="{ name: 'Armas' }" class="navbar-item" @click="switchPage('armas')">
             Armas
-        </a>
+        </router-link>
 
         <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+            <router-link :to="{ name: 'Ranking' }" class="navbar-link">
             Ranking
-            </a>
+            </router-link>
 
             <div class="navbar-dropdown">
-                <a class="navbar-item" @click="switchPage('ranking-equipe')">
+                <router-link :to="{ name: 'Ranking' }" class="navbar-item" @click="switchPage('ranking-equipe')">
                     Mata-Mata em Equipe
-                </a>
-                <a class="navbar-item" @click="switchPage('ranking-solo')">
+                </router-link>
+                <router-link :to="{ name: 'Ranking' }" class="navbar-item" @click="switchPage('ranking-solo')">
                     Mata-Mata Solo
-                </a>
+                </router-link>
                 
             </div>
         </div>

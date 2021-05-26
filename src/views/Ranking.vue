@@ -9,7 +9,7 @@
 
 <script>
 import axios from 'axios'
-import InfoRanking from './InfoRanking'
+import InfoRanking from '../components/InfoRanking'
 
 export default {
   props: {

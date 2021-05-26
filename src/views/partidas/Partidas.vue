@@ -6,7 +6,7 @@
 
 <script>
 import axios from 'axios'
-import InfoPartida from './InfoPartida'
+import InfoPartida from '../../components/InfoPartida'
 
 export default {
   data() {
