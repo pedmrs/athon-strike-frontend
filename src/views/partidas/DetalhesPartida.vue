@@ -44,7 +44,7 @@ export default {
 h2 {
   margin-top: 3%;
   text-align: center;
-  color: #f3f3f3;
+  color: #333;
 }
 .dados {
   margin: auto;
