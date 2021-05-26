@@ -1,63 +1,78 @@
 <template>
-  <nav id="header" class="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    id="header"
+    class="navbar"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
-        <router-link to="/" class="navbar-item">
-        <img src="../assets/logo-astrike.png" width="120" height="40">
-        </router-link>
+      <router-link to="/" class="navbar-item">
+        <img src="../assets/logo-astrike.png" width="120" height="40" />
+      </router-link>
     </div>
 
     <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-        <router-link :to="{ name: 'Inicio' }" class="navbar-item" @click="switchPage('inicio')">
-            Início
+      <div class="navbar-start">
+        <router-link
+          :to="{ name: 'Inicio' }"
+          class="navbar-item"
+          @click="switchPage('inicio')"
+        >
+          Início
         </router-link>
 
-        <router-link :to="{ name: 'Partidas' }" class="navbar-item" @click="switchPage('partidas')">
-            Partidas
+        <router-link
+          :to="{ name: 'Partidas' }"
+          class="navbar-item"
+          @click="switchPage('partidas')"
+        >
+          Partidas
         </router-link>
-        
-        <router-link :to="{ name: 'Armas' }" class="navbar-item" @click="switchPage('armas')">
-            Armas
+
+        <router-link
+          :to="{ name: 'Armas' }"
+          class="navbar-item"
+          @click="switchPage('armas')"
+        >
+          Armas
         </router-link>
 
         <div class="navbar-item has-dropdown is-hoverable">
-            <router-link :to="{ name: 'Ranking' }" class="navbar-link">
+          <router-link :to="{ name: 'Ranking' }" class="navbar-link">
             Ranking
-            </router-link>
+          </router-link>
 
-            <div class="navbar-dropdown">
-                <router-link :to="{ name: 'Ranking' }" class="navbar-item" @click="switchPage('ranking-equipe')">
-                    Mata-Mata em Equipe
-                </router-link>
-                <router-link :to="{ name: 'Ranking' }" class="navbar-item" @click="switchPage('ranking-solo')">
-                    Mata-Mata Solo
-                </router-link>
-                
-            </div>
+          <div class="navbar-dropdown">
+            <router-link
+              :to="{ name: 'Ranking' }"
+              class="navbar-item"
+              @click="switchPage('ranking-equipe')"
+            >
+              Mata-Mata em Equipe
+            </router-link>
+            <router-link
+              :to="{ name: 'Ranking' }"
+              class="navbar-item"
+              @click="switchPage('ranking-solo')"
+            >
+              Mata-Mata Solo
+            </router-link>
+          </div>
         </div>
-        </div>
+      </div>
     </div>
-    </nav>
+  </nav>
 </template>
 
 <script>
 export default {
-    methods: {
-        switchPage: function(page) {
-            console.log('Cliquei no botão do Header e o valor é ' + page)
-            this.$emit('switchPage', page)
-        }
-    }
-}
+  methods: {
+    switchPage: function (page) {
+      this.$emit("switchPage", page);
+    },
+  },
+};
 </script>
 
 <style scoped>
-#header, .navbar-dropdown {
-    background-color: #3e484f;
-
-}
-
-.navbar-item, .navbar-link {
-    color: white;
-}
 </style>
