@@ -29,7 +29,7 @@ export default {
     text-align: center;
 }
 p {
-  color: white;
+  color: #333;
   text-align: center;
 }
 </style>

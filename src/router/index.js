@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Armas from '../views/Armas.vue'
-import Ranking from '../views/Ranking.vue'
+import Ranking from '../views/ranking/Ranking.vue'
 import Partidas from '../views/partidas/Partidas.vue'
 import DetalhesPartida from '../views/partidas/DetalhesPartida.vue'
 
@@ -16,7 +16,7 @@ const routes = [
     component: Armas
   },
   {
-    path: '/ranking',
+    path: '/ranking/:id',
     name: 'Ranking',
     component: Ranking
   },
