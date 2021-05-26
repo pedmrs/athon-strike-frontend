@@ -13,27 +13,11 @@
 
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <router-link
-          :to="{ name: 'Inicio' }"
-          class="navbar-item"
-          @click="switchPage('inicio')"
-        >
+        <router-link :to="{ name: 'Partidas' }" class="navbar-item">
           Início
         </router-link>
 
-        <router-link
-          :to="{ name: 'Partidas' }"
-          class="navbar-item"
-          @click="switchPage('partidas')"
-        >
-          Partidas
-        </router-link>
-
-        <router-link
-          :to="{ name: 'Armas' }"
-          class="navbar-item"
-          @click="switchPage('armas')"
-        >
+        <router-link :to="{ name: 'Armas' }" class="navbar-item">
           Armas
         </router-link>
 
@@ -43,18 +27,10 @@
           </router-link>
 
           <div class="navbar-dropdown">
-            <router-link
-              :to="{ name: 'Ranking' }"
-              class="navbar-item"
-              @click="switchPage('ranking-equipe')"
-            >
+            <router-link :to="{ name: 'Ranking' }" class="navbar-item">
               Mata-Mata em Equipe
             </router-link>
-            <router-link
-              :to="{ name: 'Ranking' }"
-              class="navbar-item"
-              @click="switchPage('ranking-solo')"
-            >
+            <router-link :to="{ name: 'Ranking' }" class="navbar-item">
               Mata-Mata Solo
             </router-link>
           </div>
@@ -65,13 +41,6 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    switchPage: function (page) {
-      this.$emit("switchPage", page);
-    },
-  },
-};
 </script>
 
 <style scoped>
