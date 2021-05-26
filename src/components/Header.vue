@@ -22,15 +22,15 @@
         </router-link>
 
         <div class="navbar-item has-dropdown is-hoverable">
-          <router-link :to="{ name: 'Ranking' }" class="navbar-link">
+          <router-link :to="{ name: 'Ranking', params: { id: '1' } }" class="navbar-link">
             Ranking
           </router-link>
 
           <div class="navbar-dropdown">
-            <router-link :to="{ name: 'Ranking' }" class="navbar-item">
+            <router-link :to="{ name: 'Ranking', params: { id: '1' }  }" class="navbar-item">
               Mata-Mata em Equipe
             </router-link>
-            <router-link :to="{ name: 'Ranking' }" class="navbar-item">
+            <router-link :to="{ name: 'Ranking', params: { id: '2' } }" class="navbar-item">
               Mata-Mata Solo
             </router-link>
           </div>
