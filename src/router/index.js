@@ -3,6 +3,7 @@ import Armas from '../views/Armas.vue'
 import Ranking from '../views/ranking/Ranking.vue'
 import Partidas from '../views/partidas/Partidas.vue'
 import DetalhesPartida from '../views/partidas/DetalhesPartida.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     name: 'DetalhesPartida',
     component: DetalhesPartida
   },
+  {
+      path: '/:catchAll(.*)',
+      name: 'NotFound',
+      component: NotFound
+  }
 ]
 
 const router = createRouter({
